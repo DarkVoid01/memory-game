@@ -1,6 +1,6 @@
 import "./Header.css"
-import " ../Controls/Controls"
 import React from 'react'
+import Controls from "../Controls/Controls"
 
 const Header = () => {
   return (
