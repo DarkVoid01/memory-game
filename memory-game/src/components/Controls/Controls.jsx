@@ -11,20 +11,27 @@ const Controls = () => {
 
   useEffect(() => {
     if (isStarted) {
-      setTimeout(() => {
-      setTimeLeft( timeLeft - 1)
-    }, 1000)
-  }
-}, [isStarted])
+      const interval = setTimeout(() => {
+        setTimeLeft( Prevtime => timeLeft - 1)
+        return interval
+
+      }
+     , 1000)
+    }
+    //  return clearInterval(interval);
+}, [isStarted, timeLeft])
   return (
     <div className="Controls">
-      <p onClick={startTimer} className="contolBtn">Play</p>
-      
-      <p>TIMER:</p>
-      <p>00:{ timeLeft }</p>
+      <p onClick={startTimer} className="contolBtn">
+        Play
+      </p>
 
+      <div className="timer">
+        <p>TIMER:</p>
+        <p>00:{timeLeft}</p>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Controls

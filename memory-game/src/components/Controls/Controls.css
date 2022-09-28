@@ -1,3 +1,34 @@
 .Controls{
-  background-color: aqua;
+  background-color: rgb(153, 160, 160);
+  color: white;
+  font-family: fira code, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  border-radius: 3px;
+  margin: 0px auto;
+  max-width: 600px;
+}
+.Controls >p{
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgba(94, 89, 89, 0.185);
+  border-radius: 2px;
+}
+.Controls >p:hover{
+  background-color: rgba(0, 0, 0, 0.185);
+
+}
+.Controls .timer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+  margin-inline: 15px;
+}
+
+.Controls .timer p+p{
+  margin-top: -10px;
+  margin-left: 3.5px;
 }
