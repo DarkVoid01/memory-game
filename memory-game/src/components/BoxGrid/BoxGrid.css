@@ -1,0 +1,36 @@
+.BoxGrid{
+    display: flex;
+    justify-content: center;
+    font-family: fira code, monospace;
+}
+
+.BoxGrid .box-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 10px;
+}
+
+.BoxGrid .box-container .indi-box{
+    background-color:  rgb(153, 160, 160);
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    font-size: 50px;
+}
+
+
+.clicked p{
+    display: block;
+    color: red;
+}
+
+.correct p{
+    display: block;
+    color: white;
+    pointer-events: none;
+}
