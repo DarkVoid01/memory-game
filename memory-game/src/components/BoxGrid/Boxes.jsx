@@ -1,4 +1,4 @@
-export default [
+ var Boxes =  [
     {
         box: '1',
         row: '1',
@@ -96,3 +96,4 @@ export default [
         value: '4'
     },
 ]
+export default Boxes

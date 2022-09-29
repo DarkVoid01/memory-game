@@ -1,0 +1,29 @@
+.GameOverContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width:100vw;
+ background-color: rgba(0, 0, 0, 0.385);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ cursor: pointer;
+}
+.GameOverContainer .GameOver{
+  margin: auto;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 5px;
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.GameOverContainer .GameOver div{
+  margin: auto;
+  width: max-content;
+  color: black;
+  text-align: center;
+}
