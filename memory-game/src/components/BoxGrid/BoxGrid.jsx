@@ -3,14 +3,15 @@ import boxes from "./Boxes"
 import React from 'react'
 
 const BoxGrid = () => {
-
-    const clickHandler = e =>{
-        const number = e.target.child.textContent
+    const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+    const newBox = shuffle(boxes);
+        const clickHandler = e =>{
+        console.log(e.box.box)
     }
   return (
     <div className="BoxGrid">
         <div className="box-container">
-            {boxes.map(
+            {newBox.map(
                 box =>(
                     
                 <div onClick={clickHandler} className="indi-box" key={box.box}>
